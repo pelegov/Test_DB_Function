@@ -1,0 +1,18 @@
+def get_value(id):
+    cursor.execute("SELECT * FROM tZsOURTiTL.users WHERE (user_id) =  ({})".format(id))
+    cursor.close()
+    conn.close()
+    return 
+
+
+
+def put_value(id,name):
+    cursor.execute("UPDATE tZsOURTiTL.users SET (user_name) = ('{}') WHERE (user_id) = ('{}')".format(name,id))
+    cursor.close()
+    conn.close()
+    return
+    
+    
+
+    
+    
